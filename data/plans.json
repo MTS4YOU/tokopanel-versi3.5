@@ -1,0 +1,36 @@
+{
+  "plans": [
+    {
+      "id": "basic",
+      "name": "Basic",
+      "memory": 1024,
+      "disk": 5120,
+      "cpu": 50,
+      "price": 25000
+    },
+    {
+      "id": "standard",
+      "name": "Standard",
+      "memory": 2048,
+      "disk": 10240,
+      "cpu": 100,
+      "price": 50000
+    },
+    {
+      "id": "premium",
+      "name": "Premium",
+      "memory": 4096,
+      "disk": 20480,
+      "cpu": 200,
+      "price": 100000
+    },
+    {
+      "id": "ultimate",
+      "name": "Ultimate",
+      "memory": 8192,
+      "disk": 40960,
+      "cpu": 300,
+      "price": 200000
+    }
+  ]
+}
