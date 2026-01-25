@@ -23,8 +23,8 @@ export const pterodactylConfig = {
 export const appConfig = {
   whatsappGroupLink: "https://whatsapp.com/channel/0029VbBHzkt1t90Z4H55f638", // link group
   nameHost: "MTS4YOU XD", // nama host 
-  feeMin: 200, //minimal fee
-  feeMax: 200, // max fee 
+  feeMin: 500, //minimal fee
+  feeMax: 500, // max fee 
   garansi: {
     warrantyDays: 30, // Limit hari
     replaceLimit: 5, // Limit replace/claim
