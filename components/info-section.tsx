@@ -14,22 +14,28 @@ export function InfoSection() {
       delay: 0.2,
     },
     {
-      icon: <Zap className="w-10 h-10 text-red-500" />,
-      title: "PERFORMA SERVER",
-      description: "Nikmati performa server 2.7GHz yang cepat dan stabil untuk menjalankan bot Anda tanpa kendala.",
-      delay: 0.2,
-    },
-    {
       icon: <CalendarClock className="w-10 h-10 text-red-500" />,
       title: "MASA AKTIF PANEL",
-      description: "Masa aktif panel hanya 1 bulan, dengan garansi aktif 12 hari (3× replace).",
+      description: "Masa aktif panel hanya 1 bulan, dengan garansi aktif full 30 hari (5× replace).",
       delay: 0.4,
     },
     {
       icon: <Cpu className="w-10 h-10 text-red-500" />,
-      title: "SPESIFIKASI SERVER",
-      description: "Server kami menggunakan VPS (RAM 32GB/16 CORE • NVMe 128GB) dan VPS kami legal di Indonesia.",
+      title: "SPESIFIKASI SERVER PRIVATE",
+      description: "Server kami menggunakan VPS (RAM 32GB/16 CORE • NVMe 200GB) dan VPS kami legal di Indonesia.",
       delay: 0.4,
+    },
+    {
+      icon: <Cpu className="w-10 h-10 text-red-500" />,
+      title: "SPESIFIKASI SERVER PUBLIC",
+      description: "Server kami menggunakan VPS (RAM 16GB/10 CORE • NVMe 128GB) dan VPS kami legal di Indonesia.",
+      delay: 0.4,
+    },
+    {
+      icon: <Zap className="w-10 h-10 text-red-500" />,
+      title: "PERFORMA SERVER",
+      description: "Nikmati performa server 2.7GHz yang cepat dan stabil untuk menjalankan bot Anda tanpa kendala.",
+      delay: 0.2,
     },
     {
       icon: <Clock className="w-10 h-10 text-red-500" />,
