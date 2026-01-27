@@ -20,6 +20,11 @@ const faqs = [
     answer: 
       "Mempermudah dan membuat peforma bot anda lebih stabil, dan tidak akan memakan kuota internet serta ruang penyimpanan pada device anda.",
   },
+  {
+    question: "Apa perbedaan panel Private dan Public?",
+    answer: 
+      "Panel Private Mengutamakan Kualitas dan ke amanan privasi mu, sementara Public Harga lebih terjangkau dan ke amanan privasi mu tidak terjamin, di Private hanya Owner yang menjadi Akses admin pada Server, di Public tidak hanya 1 akses admin pada server.",
+  },
   { 
     question: "Bagaimana cara claim garansi?",
     answer: "Anda bisa click pada short menu di pojok kanan atas, dan anda memerlukan ID transaksi serta alamat email yang tercantum pada halaman Riwayat Transaksi.",
