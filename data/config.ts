@@ -9,7 +9,7 @@ export const pterodactylConfig = {
   },
   // Public Server Configuratio
   public: {
-    domain: "https://tokopanel157-public209.mts4you.biz.id", // ubah sesuai domain public panel
+    domain: "https://tokopanel171-public27.panelshop.biz.id", // ubah sesuai domain public panel
     apiKey: process.env.PANEL_APIKEY_PUBLIK, // ubah sesuai public API key
     nests: "5", 
     egg: "15", 
