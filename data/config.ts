@@ -1,7 +1,7 @@
 export const pterodactylConfig = { 
   // Private Server Configuration
   private: {
-    domain: "https://tokopanel157-private216.mts4you.biz.id",
+    domain: "https://tokopanel151-private26.panelshop.biz.id",
     apiKey: process.env.PANEL_APIKEY_PRIVATE,
     nests: "5", 
     egg: "15", 
