@@ -15,7 +15,7 @@ const transporter = nodemailer.createTransport({
 
 export async function sendPanelDetailsEmail(
   to: string,
-  transactionId: string
+  transactionId: string,
   username: string,
   password: string,
   serverId: number,
