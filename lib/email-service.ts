@@ -39,10 +39,10 @@ export async function sendPanelDetailsEmail(
         
         <div style="padding: 20px; background-color: #f8f9fa;">
           <p>Halo,</p>
-          <p>Terima kasih telah membeli panel Pterodactyl di ${appConfig.nameHost}. Berikut adalah detail akun panel Anda:</p>
-          <p><strong>ID Transaksi:</strong> ${transactionId}</p>
+          <p>Terima kasih telah membeli panel Pterodactyl di ${appConfig.nameHost}. Berikut adalah detail akun panel Anda:</p> 
           
           <div style="background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 5px; padding: 15px; margin: 20px 0;">
+            <p><strong>ID Transaksi:</strong> ${transactionId}</p>
             <p><strong>Paket:</strong> ${planName}</p>
             <p><strong>Server Type:</strong> ${serverType}</p>
             <p><strong>Username:</strong> ${username}</p>
