@@ -1,6 +1,7 @@
 import nodemailer from "nodemailer"
 import { appConfig } from "@/data/config"
 import { pterodactylConfig } from "@/data/config"
+import { getTransactionById } from "@/app/actions/get-transactions"
 
 type ServerType = "public" | "private"
 
@@ -14,6 +15,7 @@ const transporter = nodemailer.createTransport({
 
 export async function sendPanelDetailsEmail(
   to: string,
+  transactionId: string
   username: string,
   password: string,
   serverId: number,
@@ -38,10 +40,11 @@ export async function sendPanelDetailsEmail(
         <div style="padding: 20px; background-color: #f8f9fa;">
           <p>Halo,</p>
           <p>Terima kasih telah membeli panel Pterodactyl di ${appConfig.nameHost}. Berikut adalah detail akun panel Anda:</p>
+          <p><strong>ID Transaksi:</strong> ${transactionId}</p>
           
           <div style="background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 5px; padding: 15px; margin: 20px 0;">
-            <p><strong>ID Transaksi:</strong> ${planName}</p>
             <p><strong>Paket:</strong> ${planName}</p>
+            <p><strong>Server Type:</strong> ${serverType}</p>
             <p><strong>Username:</strong> ${username}</p>
             <p><strong>Password:</strong> <code style="background-color: #f0f0f0; padding: 2px 4px; border-radius: 3px;">${password}</code></p>
             <p><strong>Server ID:</strong> ${serverId}</p>
