@@ -412,6 +412,18 @@ export const plans: Plan[] = [
     description: "𝗣𝗮𝗸𝗲𝘁 𝗦𝘁𝗮𝗻𝗱𝗮𝗿 𝗨𝗻𝘁𝘂𝗸 𝗦𝗰𝗿𝗶𝗽𝘁 𝗕𝗼𝘁 𝗦𝘁𝗮𝗻𝗱𝗮𝗿",
     features: ["Akses Panel Bot", "Support Nodejs 20+", "Masa Aktif ±1 Bulan", "Garansi Aktif 30 Hari", "Garansi 5× Replace"],
   },
+  {
+    id: "adminpanel",
+    type: "public",
+    access: "regular",
+    name: "ⓀADMIN PANEL",
+    memory: 0,
+    disk: 0,
+    cpu: 0,
+    price: 25000,
+    description: "𝗞𝗼𝗻𝘁𝗿𝗼𝗹 𝗗𝗮𝗻 𝗠𝗲𝗺𝗯𝘂𝗮𝘁 𝗣𝗮𝗻𝗲𝗹 𝗔𝗻𝗱𝗮 𝗦𝗲𝗻𝗱𝗶𝗿𝗶",
+    features: ["Akses Admin Panel", "Membuat Panel Sepuasnya", "Bisa Jualan Panel", "Support Nodejs 20+", "Masa Aktif ±1 Bulan", "Garansi Aktif 30 Hari", "Garansi 5× Replace"],
+  },
   // Public Plans - Admin Access
   {
     id: "adminpanel",
