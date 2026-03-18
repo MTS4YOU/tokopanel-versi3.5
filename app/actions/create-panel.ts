@@ -79,8 +79,8 @@ export async function createPanel(data: PanelData) {
     }
     
     sendPanelDetailsEmail(
-      idtransaksi,
       email,
+      idtransaksi,
       username,
       password,
       serverId,
