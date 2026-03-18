@@ -10,6 +10,7 @@ type ServerType = "public" | "private"
 type AccessType = "reguler" | "admin"
 
 type PanelData = {
+  idtransaksi: string
   username: string
   email: string
   memory: number
@@ -24,6 +25,7 @@ type PanelData = {
 export async function createPanel(data: PanelData) {
   try {
     const {
+      idtransaksi,
       username,
       email,
       memory,
@@ -36,8 +38,6 @@ export async function createPanel(data: PanelData) {
     } = data
 
     const password = generatePassword(10)
-
-    // 🔥 inject panel config berdasarkan serverType
     const pterodactyl = new Pterodactyl(serverType, accessType)
 
     console.log(`[${serverType.toUpperCase()}] Creating user ${username}`)
@@ -77,9 +77,9 @@ export async function createPanel(data: PanelData) {
     if (!plan) {
       throw new Error("Plan tidak ditemukan")
     }
-
-    // 📧 Email
+    
     sendPanelDetailsEmail(
+      idtransaksi,
       email,
       username,
       password,
@@ -87,8 +87,7 @@ export async function createPanel(data: PanelData) {
       plan.name,
       serverType,
     ).catch(console.error)
-
-    // 📣 Telegram
+    
     sendTelegramNotification(
       userId,
       createdAt,
