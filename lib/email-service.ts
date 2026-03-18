@@ -78,6 +78,7 @@ export async function sendPanelDetailsEmail(
     const info = await transporter.sendMail(mailOptions)
     return { success: true, messageId: info.messageId }
   } catch (error) {
+    console.error("Error sending smtp:", error)
     return { success: false, error: error instanceof Error ? error.message : "Unknown error" }
   }
 }
