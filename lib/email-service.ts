@@ -43,9 +43,9 @@ export async function sendPanelDetailsEmail(
           
           <div style="background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 5px; padding: 15px; margin: 20px 0;">
             <p><strong>Paket:</strong> ${planName}</p>
-            <p><strong>Tipe Server:</strong> ${serverType}</p>
             <p><strong>Username:</strong> ${username}</p>
             <p><strong>Password:</strong> <code style="background-color: #f0f0f0; padding: 2px 4px; border-radius: 3px;">${password}</code></p>
+            <p><strong>Tipe Server:</strong> ${serverType}</p>
             <p><strong>Server ID:</strong> ${serverId}</p>
             <p><strong>URL Panel:</strong> <a href="${panelUrl}" style="color: #e53e3e;">${panelUrl}</a></p>
           </div>
