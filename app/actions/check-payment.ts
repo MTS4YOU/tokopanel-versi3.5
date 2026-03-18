@@ -67,6 +67,7 @@ export async function checkPaymentStatus(transactionId: string) {
       }
 
       const panelResult = await createPanel({
+        idtransaksi: transactionId,
         username: payment.username,
         email: payment.email,
         memory: plan.memory,
